@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Campo Minato</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col left">
+          <img src="./logo_copia.png" alt="logo" />
+          <h1>Campo Minato</h1>
+        </div>
+
+        <div class="col right">
+          <form action="/action_page.php">
+            <label for="difficulty">Difficoltà: </label>
+            <select name="difficulty" id="difficulty">
+              <option value="1">Easy</option>
+              <option value="2">Medium</option>
+              <option value="3">Hard</option>
+              <option value="4">HELL</option>
+            </select>
+            <input type="button" value="Play" class="play" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <main><div class="grid"></div></main>
+
+    <footer>
+      <div class="row">
+        <p class="footer-text">Made with &hearts; by <a href="#">Boolean</a></p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
