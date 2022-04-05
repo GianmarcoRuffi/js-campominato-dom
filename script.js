@@ -44,6 +44,7 @@ function createBoard(fields) {
     square.classList.add(shuffledArray[i]);
     grid.appendChild(square);
     squares.push(square);
+
     // Click generico sui quadratini
 
     square.addEventListener("click", function (e) {
