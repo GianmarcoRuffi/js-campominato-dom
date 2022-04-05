@@ -91,7 +91,7 @@ let play = document.querySelector(".play");
 play.addEventListener("click", function () {
   let value = difficulty.options[difficulty.selectedIndex].value;
   let text = difficulty.options[difficulty.selectedIndex].text;
-  console.log(value + " " + text);
+
   let fields;
   switch (value) {
     case "1":
@@ -120,7 +120,12 @@ const clickedButtons = [];
 
 function click(square) {
   if (square.classList.contains("bomb") && !gameOver) {
-    square.classList.add("bomb-checked");
+    square.classList.add("bomb-exploded");
+    bombSquares = document.getElementsByClassName("bomb");
+
+    for (item of bombSquares) {
+      item.classList.add("bomb-checked");
+    }
     gameOver = true;
     alert(
       "Game Over! Hai completato il gioco con il seguente punteggio: " +

@@ -82,7 +82,7 @@ h2 {
   color: white;
 }
 
-.bomb {
-  background-color: red;
-  color: gold;
+.bomb-checked.bomb-exploded {
+  background-color: orange;
+  color: red;
 }
